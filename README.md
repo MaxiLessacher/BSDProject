@@ -5,4 +5,4 @@ Project Members
 ---------------
 ~ David Jäger
 ~ Maxi Lessacher
-~ Dominik Riva
+~ Dominik Pederiva
