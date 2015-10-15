@@ -1,0 +1,68 @@
+drop table Verwaltungspersonal cascade constraints;
+drop table wasserstandsmeldung cascade constraints;
+drop table wasserzaehler cascade constraints;
+drop table mitglieder cascade constraints;
+drop table haushalt cascade constraints;
+drop table adresse cascade constraints;
+drop table strasse cascade constraints;
+drop table ort cascade constraints;
+
+
+Create Table Ort (
+	PLZ number Primary Key,
+	Name varchar2(30)
+);
+
+Create Table Strasse (
+	Name varchar2(50),
+	PLZ references Ort(PLZ),
+	Primary Key (Name, PLZ)
+);
+
+Create Table Adresse (
+	Name varchar2(50),
+	PLZ number,
+	Nummer number,
+	Primary Key (Name, PLZ, Nummer),
+	Constraint fk_Strasse FOREIGN KEY (Name, PLZ) references Strasse (Name, PLZ)
+);
+
+Create Table Haushalt (
+	HH_ID number Primary Key,
+	Name varchar(50),
+	PLZ number,
+	Nummer number,
+	TuerNr number,
+	Wohnflaeche number,
+	Landwirtschaft number(1),
+	Garten number(1),
+  constraint fk_adresse foreign key (name, PLZ, Nummer) references adresse(name, plz, nummer)
+);
+
+Create Table Mitglieder (
+	Mitglieds_ID number,
+	Name varchar2(30),
+	HH_Vorstand number(1),
+	HH_ID references Haushalt(HH_ID),
+	Primary Key (Mitglieds_ID, HH_ID)	
+);
+
+Create Table Wasserzaehler (
+	Zaehler_Nr number Primary Key,
+	HH_ID references Haushalt(HH_ID),
+	Zaehlerstand number,
+	Standort SDO_GEOMETRY,
+	Hauptzaehler number(1)
+);
+
+Create Table Wasserstandsmeldung (
+	Datum date,
+	Zaehler_Nr references Wasserzaehler(Zaehler_Nr),
+	neuZaehlerstand number,
+	Primary Key (Datum, Zaehler_NR)
+);
+
+Create Table Verwaltungspersonal (
+	PersonalID number Primary Key,
+	Name varchar2(30),
+	Abteilung varchar2(30));
