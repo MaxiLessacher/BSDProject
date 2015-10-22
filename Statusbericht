@@ -1,4 +1,4 @@
-Das Datenmodell steht, Create Table Befehle wurden auch schon erstellt, einziges Problem ist das Erstellen eines Standorts.
+﻿Das Datenmodell steht, Create Table Befehle wurden auch schon erstellt, einziges Problem ist das Erstellen eines Standorts.
 Dies soll bis nächste Woche gelöst werden. 
 Das Datenmodell und die Create Tables wurden von Pederiva und Jäger erstellt. Aufgrund einer Erkrankung konnte Lessacher bei der
 Arbeit nicht mitwirken.
@@ -13,3 +13,11 @@ Nächste Ziele (bis 16.10.):
 Nächste Ziele (bis 22.10):
   -> Fertigstellung der Beispieldaten
   -> Starten mit dem erstellen der GUIs
+
+22.10
+  -> Teilweise Fertigstellung der Beispieldaten (Pederiva)
+  -> Erste GUI mit WPF wurde erstellt (Jäger, Lessacher)
+Nächste Ziele (bis 29.10):
+  -> Fertigstellung der Beispieldaten
+  -> Ausbau der GUIs
+  -> Erstellung der ersten JavaFX GUI
