@@ -1,0 +1,155 @@
+insert into ort values (9500, 'Villach');
+insert into ort values (9523, 'Landskron');
+insert into ort values (9020, 'Klagenfurt');
+insert into ort values (9832, 'Stall');
+insert into ort values (9231, 'Koestenberg');
+
+insert into strasse values('Hausergasse', 9500);
+insert into strasse values('Tschinowitscher Weg', 9500);
+insert into strasse values('Italienerstrasse', 9500);
+insert into strasse values('Lederergasse', 9500);
+insert into strasse values('Leopold-Hradil-Strasse', 9500);
+insert into strasse values('Luziagasse', 9500);
+
+insert into strasse values('Hertha-Firnberg-Weg', 9523);
+insert into strasse values('Burgstrasse', 9523);
+insert into strasse values('Buehlerweg', 9523);
+insert into strasse values('Schulstrasse', 9523);
+
+insert into strasse values('Waldweg', 9020);
+insert into strasse values('Voelkermarkter Strasse', 9020);
+insert into strasse values('Viktringer Strasse', 9020);
+insert into strasse values('Salmstrasse', 9020);
+insert into strasse values('Funderstrasse', 9020);
+insert into strasse values('Lastenstrasse', 9020);
+insert into strasse values('Sonnwendgasse', 9020);
+
+insert into strasse values('Sonnberg', 9832);
+insert into strasse values('Stieflberg', 9832);
+insert into strasse values('Stadlberg', 9832);
+insert into strasse values('Latzenberg', 9832);
+
+insert into strasse values('Koestenberger Strasse', 9231);
+insert into strasse values('Oberdorfer Weg', 9231);
+insert into strasse values('Koestenberger Dorfweg', 9231);
+
+insert into adresse values('Koestenberger Dorfweg', 9231, 4);
+insert into adresse values('Koestenberger Dorfweg', 9231, 69);
+insert into adresse values('Koestenberger Dorfweg', 9231, 23);
+insert into adresse values('Koestenberger Dorfweg', 9231, 88);
+insert into adresse values('Koestenberger Dorfweg', 9231, 1);
+
+insert into adresse values('Oberdorfer Weg', 9231, 1);
+insert into adresse values('Oberdorfer Weg', 9231, 2);
+insert into adresse values('Oberdorfer Weg', 9231, 3);
+insert into adresse values('Oberdorfer Weg', 9231, 4);
+
+insert into adresse values('Koestenberger Strasse', 9231, 12);
+insert into adresse values('Koestenberger Strasse', 9231, 43);
+insert into adresse values('Koestenberger Strasse', 9231, 52);
+insert into adresse values('Koestenberger Strasse', 9231, 7);
+insert into adresse values('Koestenberger Strasse', 9231, 15);
+insert into adresse values('Koestenberger Strasse', 9231, 3);
+insert into adresse values('Koestenberger Strasse', 9231, 72);
+
+insert into adresse values('Sonnberg', 9832, 4);
+insert into adresse values('Sonnberg', 9832, 42);
+insert into adresse values('Sonnberg', 9832, 26);
+
+insert into adresse values('Stieflberg', 9832, 7);
+insert into adresse values('Stieflberg', 9832, 56);
+insert into adresse values('Stieflberg', 9832, 89);
+
+insert into adresse values('Stadlberg', 9832, 1);
+
+insert into adresse values('Latzenberg', 9832, 1);
+insert into adresse values('Latzenberg', 9832, 2);
+insert into adresse values('Latzenberg', 9832, 3);
+
+insert into adresse values('Waldweg', 9020, 1);
+insert into adresse values('Waldweg', 9020, 2);
+insert into adresse values('Waldweg', 9020, 3);
+insert into adresse values('Waldweg', 9020, 4);
+insert into adresse values('Waldweg', 9020, 5);
+insert into adresse values('Waldweg', 9020, 6);
+insert into adresse values('Waldweg', 9020, 7);
+insert into adresse values('Waldweg', 9020, 8);
+
+insert into adresse values('Hertha-Firnberg-Weg', 9523, 1);
+insert into adresse values('Hertha-Firnberg-Weg', 9523, 2);
+insert into adresse values('Hertha-Firnberg-Weg', 9523, 3);
+insert into adresse values('Hertha-Firnberg-Weg', 9523, 4);
+insert into adresse values('Hertha-Firnberg-Weg', 9523, 5);
+insert into adresse values('Hertha-Firnberg-Weg', 9523, 6);
+
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 6);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 7);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 8);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 9);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 10);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 11);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 12);
+insert into adresse values('Leopold-Hrazdil-Strasse', 9500, 13);
+
+INSERT INTO Haushalt values (1, 'Koestenberger Dorfweg', 9231, 4, 1, 80, 0, 1) ;
+INSERT INTO Haushalt values (2, 'Koestenberger Dorfweg', 9231, 69, 1, 20, 0, 0) ;
+INSERT INTO Haushalt values (3, 'Koestenberger Dorfweg', 9231, 23, 1, 120, 0, 1) ;
+INSERT INTO Haushalt values (4, 'Koestenberger Dorfweg', 9231, 23, 2, 100, 0, 1) ;
+INSERT INTO Haushalt values (5, 'Koestenberger Dorfweg', 9231, 88, 1, 60, 0, 0) ;
+INSERT INTO Haushalt values (6, 'Koestenberger Dorfweg', 9231, 1, 1, 200, 1, 1) ;
+
+INSERT INTO Haushalt values (7, 'Oberdorfer Weg', 9231, 1, 1, 80, 0, 1) ;
+INSERT INTO Haushalt values (8, 'Oberdorfer Weg', 9231, 2, 1, 80, 0, 0) ;
+INSERT INTO Haushalt values (9, 'Oberdorfer Weg', 9231, 3, 1, 90, 0, 0) ;
+INSERT INTO Haushalt values (10, 'Oberdorfer Weg', 9231, 4, 1, 50, 0, 1) ;
+
+INSERT INTO Haushalt values (11, 'Koestenberger Strasse', 9231, 12, 1, 66, 0, 1) ;
+INSERT INTO Haushalt values (12, 'Koestenberger Strasse', 9231, 43, 1, 73, 0, 0) ;
+INSERT INTO Haushalt values (13, 'Koestenberger Strasse', 9231, 52, 1, 110, 1, 1) ;
+INSERT INTO Haushalt values (14, 'Koestenberger Strasse', 9231, 7, 1, 43, 0, 0) ;
+INSERT INTO Haushalt values (15, 'Koestenberger Strasse', 9231, 15, 1, 70, 0, 0) ;
+INSERT INTO Haushalt values (16, 'Koestenberger Strasse', 9231, 3, 1, 44, 0, 0) ;
+INSERT INTO Haushalt values (17, 'Koestenberger Strasse', 9231, 72, 1, 90, 0, 1) ;
+
+INSERT INTO Haushalt values (18, 'Sonnberg', 9832, 4, 1, 120, 0, 1) ;
+INSERT INTO Haushalt values (19, 'Sonnberg', 9832, 42, 1, 150, 1, 1) ;
+INSERT INTO Haushalt values (20, 'Sonnberg', 9832, 26, 1, 120, 1, 1) ;
+
+INSERT INTO Haushalt values (21, 'Stieflberg', 9832, 7, 1, 120, 1, 1) ;
+INSERT INTO Haushalt values (22, 'Stieflberg', 9832, 56, 1, 70, 1, 1) ;
+INSERT INTO Haushalt values (23, 'Stieflberg', 9832, 89, 1, 100, 1, 1) ;
+
+INSERT INTO Haushalt values (24, 'Stadlberg', 9832, 1, 1, 120, 1, 1) ;
+
+INSERT INTO Haushalt values (25, 'Latzenberg', 9832, 1, 1, 130, 1, 1) ;
+INSERT INTO Haushalt values (26, 'Latzenberg', 9832, 1, 2, 60, 1, 1) ;
+INSERT INTO Haushalt values (27, 'Latzenberg', 9832, 1, 3, 110, 1, 1) ;
+
+INSERT INTO Haushalt values (28, 'Waldweg', 9020, 1, 1, 80, 0, 1) ;
+INSERT INTO Haushalt values (29, 'Waldweg', 9020, 1, 2, 80, 0, 1) ;
+INSERT INTO Haushalt values (30, 'Waldweg', 9020, 1, 3, 80, 0, 1) ;
+INSERT INTO Haushalt values (31, 'Waldweg', 9020, 2, 1, 60, 0, 0) ;
+INSERT INTO Haushalt values (32, 'Waldweg', 9020, 3, 1, 66, 0, 0) ;
+INSERT INTO Haushalt values (33, 'Waldweg', 9020, 4, 1, 63, 0, 0) ;
+INSERT INTO Haushalt values (34, 'Waldweg', 9020, 5, 1, 90, 0, 0) ;
+INSERT INTO Haushalt values (35, 'Waldweg', 9020, 6, 1, 80, 0, 0) ;
+INSERT INTO Haushalt values (36, 'Waldweg', 9020, 7, 1, 43, 0, 0) ;
+INSERT INTO Haushalt values (37, 'Waldweg', 9020, 8, 1, 60, 0, 0) ;
+
+INSERT INTO Haushalt values (38, 'Hertha-Firnberg-Weg', 9523, 1, 1, 60, 0, 0) ;
+INSERT INTO Haushalt values (39, 'Hertha-Firnberg-Weg', 9523, 2, 1, 88, 0, 0) ;
+INSERT INTO Haushalt values (40, 'Hertha-Firnberg-Weg', 9523, 3, 1, 90, 0, 0) ;
+INSERT INTO Haushalt values (41, 'Hertha-Firnberg-Weg', 9523, 4, 1, 43, 0, 0) ;
+INSERT INTO Haushalt values (42, 'Hertha-Firnberg-Weg', 9523, 5, 1, 62, 0, 0) ;
+INSERT INTO Haushalt values (43, 'Hertha-Firnberg-Weg', 9523, 6, 1, 41, 0, 0) ;
+
+INSERT INTO Haushalt values (44, 'Leopold-Hrazdil-Strasse', 9500, 6, 1, 16, 0, 0) ;
+INSERT INTO Haushalt values (45, 'Leopold-Hrazdil-Strasse', 9500, 7, 1, 116, 0, 1) ;
+INSERT INTO Haushalt values (46, 'Leopold-Hrazdil-Strasse', 9500, 8, 1, 138, 0, 1) ;
+INSERT INTO Haushalt values (47, 'Leopold-Hrazdil-Strasse', 9500, 9, 1, 317, 0, 1) ;
+INSERT INTO Haushalt values (48, 'Leopold-Hrazdil-Strasse', 9500, 10, 1, 132, 0, 1) ;
+INSERT INTO Haushalt values (49, 'Leopold-Hrazdil-Strasse', 9500, 11, 1, 47, 0, 1) ;
+INSERT INTO Haushalt values (50, 'Leopold-Hrazdil-Strasse', 9500, 12, 1, 80, 0, 1) ;
+INSERT INTO Haushalt values (51, 'Leopold-Hrazdil-Strasse', 9500, 13, 1, 30, 0, 1) ;
+
+commit;
