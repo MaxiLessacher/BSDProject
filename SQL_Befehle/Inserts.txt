@@ -152,4 +152,47 @@ INSERT INTO Haushalt values (49, 'Leopold-Hrazdil-Strasse', 9500, 11, 1, 47, 0, 
 INSERT INTO Haushalt values (50, 'Leopold-Hrazdil-Strasse', 9500, 12, 1, 80, 0, 1) ;
 INSERT INTO Haushalt values (51, 'Leopold-Hrazdil-Strasse', 9500, 13, 1, 30, 0, 1) ;
 
+delete from user_sdo_geom_metadata
+where table_name = 'WASSERZAEHLER' 
+or table_name = 'wasserzaehler';
+
+INSERT INTO user_sdo_geom_metadata
+( TABLE_NAME,
+COLUMN_NAME,
+DIMINFO,
+SRID
+)
+VALUES
+( 'wasserzaheler',
+'Standort',
+SDO_DIM_ARRAY( -- 20X20 grid
+SDO_DIM_ELEMENT('X', 0, 20, 0.005),
+SDO_DIM_ELEMENT('Y', 0, 20, 0.005)
+),
+NULL -- SRID
+);
+
+
+INSERT INTO Wasserzaehler values (1, 1, 152, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(60, 1, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (2, 2, 2003, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(64, 15, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (3, 3, 8166, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(62, 20, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (4, 4, 1861, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(62, 20, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (5, 5, 168, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(60, 45, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (6, 6, 140, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(60, 60, NULL), NULL, NULL), 1);
+
+INSERT INTO Wasserzaehler values (7, 7, 8461, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(40, 18, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (8, 8, 6499, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(20, 17, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (9, 9, 1138, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(30, 20, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (10, 10, 138, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(28, 18, NULL), NULL, NULL), 1);
+
+INSERT INTO Wasserzaehler values (11, 11, 113, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(28, 40, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (12, 12, 1387, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(17, 41, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (13, 13, 732, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(33, 39, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (14, 14, 6126, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(40, 40, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (15, 15, 324, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(49, 42, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (16, 16, 138, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(53, 38, NULL), NULL, NULL), 1);
+INSERT INTO Wasserzaehler values (17, 17, 241, SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(60, 40, NULL), NULL, NULL), 1);
+
+
+
 commit;
