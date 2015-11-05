@@ -28,3 +28,9 @@ Nächste Ziele (bis 29.10):
   -> Zeichnen der Wasserzähler
   -> Erstellung Beispieldaten
   -> Erstellung von JavaFX GUIs
+  
+05.11
+  -> Zeichen der Wasserzähler verbessert
+  -> Bugs beim Select gefixt
+  -> Tabellen gefixt
+  -> An den JavaFX GUIs weitergearbeitet
