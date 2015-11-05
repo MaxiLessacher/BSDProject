@@ -21,3 +21,8 @@ Nächste Ziele (bis 29.10):
   -> Fertigstellung der Beispieldaten
   -> Ausbau der GUIs
   -> Erstellung der ersten JavaFX GUI
+  
+  29.10
+    -> Erstellen der Klassen in C#
+    -> Laden der Daten aus der Datenbank
+    -> Zeichnen der Wasserzähler
