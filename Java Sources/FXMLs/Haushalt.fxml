@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="731.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.AdressenController">
+   <children>
+      <VBox layoutX="31.0" layoutY="107.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: violet;">
+         <children>
+            <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#onAction_btnCreate" prefHeight="26.0" prefWidth="100.0" text="Create" />
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onAction_btnDelete" prefHeight="26.0" prefWidth="100.0" text="Delete" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onAction_btnCancel" prefHeight="26.0" prefWidth="100.0" text="Cancel" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableviewData" layoutX="152.0" layoutY="36.0" prefHeight="376.0" prefWidth="560.0">
+        <columns>
+          <TableColumn fx:id="cell_HH_ID" prefWidth="70.0" text="Haushalt_ID" />
+          <TableColumn fx:id="cellStrasse" prefWidth="70.0" text="Strasse" />
+	  <TableColumn fx:id="cellPLZ" prefWidth="70.0" text="PLZ" />
+          <TableColumn fx:id="cellHausnummer" prefWidth="70.0" text="Hausnummer" />
+          <TableColumn fx:id="cellTuerNr" prefWidth="70.0" text="Tür Nr" />
+	  <TableColumn fx:id="cellWohnflaeche" prefWidth="70.0" text="Wohnflaeche" />
+          <TableColumn fx:id="cellLandwirtschaft" prefWidth="70.0" text="Landwirtschaft" />
+          <TableColumn fx:id="cellGartem" prefWidth="70.0" text="Garten" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
