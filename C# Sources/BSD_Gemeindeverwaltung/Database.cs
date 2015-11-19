@@ -22,9 +22,10 @@ namespace BSD_Gemeindeverwaltung
         private  OleDbConnection connection = null;
         private  OleDbTransaction transe = null;
         private  String connStr = "";
-        public List<Haushalt> Haushalte = new List<Haushalt>();
         private String Stadt { get; set; }
         private PointCollection pc = new PointCollection();
+        public List<Haushalt> Haushalte = new List<Haushalt>();
+        public List<Mitglied> Mitglieder = new List<Mitglied>();
 
         public Database() { }
 
@@ -89,6 +90,7 @@ namespace BSD_Gemeindeverwaltung
                 connect();
                 //var reader = new OleDbCommand("Select zaehler_nr, w.hh_id, zaehlerstand, hauptzaehler from haushalt h inner join wasserzaehler w on h.hh_id = w.HH_ID where h.HH_ID = '" + (i+1) + "' and h.plz = '" + Haushalte.ElementAt(i).plz + "'", this.connection).ExecuteReader();
                 var reader = new OleDbCommand("Select zaehler_nr, w.hh_id, zaehlerstand, hauptzaehler from haushalt h inner join wasserzaehler w on h.hh_id = w.HH_ID where h.hh_id = '" + Haushalte.ElementAt(i).hid + "'", this.connection).ExecuteReader();
+                //var reader = new OleDbCommand("Select zaehler_nr, w.hh_id, zaehlerstand, hauptzaehler, w.zaehler_nr, t.x, t.y from haushalt h inner join wasserzaehler w on h.hh_id = w.HH_ID where h.hh_id = '" + Haushalte.ElementAt(i).hid + "' , TABLE(SDO_UTIL.GETVERTICES(w.standort)) t", this.connection).ExecuteReader();
                 while(reader.Read())
                 {
                     Console.WriteLine(Haushalte.Count);
@@ -117,10 +119,28 @@ namespace BSD_Gemeindeverwaltung
             }
         }
 
+        public void fillMitglieder()
+        {
+            connect();
+            var reader = new OleDbCommand("SELECT mitglieds_id, name, hh_vorstand, hh_id FROM mitglieder", this.connection).ExecuteReader();
+            while (reader.Read())
+            {
+                int mit = Convert.ToInt32(reader["mitglieds_id"]);
+                String name = reader["name"].ToString();
+                int hhv = Convert.ToInt32(reader["hh_vorstand"]);
+                int hhi = Convert.ToInt32(reader["hh_id"]);
+                Boolean hh_v = false;
+                if (hhv == 1) hh_v = true;
+                Mitglieder.Add(new Mitglied(mit, name, hh_v, hhi));
+            }
+
+        }
+
         public void printHaushalte()
         {
             fillHaushalte();
             fillWasserzaehler();
+            fillMitglieder();
             foreach (Haushalt h in Haushalte)
             {
                 Console.WriteLine(h.ToString());

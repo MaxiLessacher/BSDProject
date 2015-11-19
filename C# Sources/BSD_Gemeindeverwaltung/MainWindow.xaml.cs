@@ -28,8 +28,8 @@ namespace BSD_Gemeindeverwaltung
 
         private void bttnSearch_Click(object sender, RoutedEventArgs e)
         {
-            db = new Database("Provider=OraOLEDB.Oracle; Data Source=192.168.128.151/ora11g;User Id = d5b30;Password =d5b30; OLEDB.NET=True;");
-            //db = new Database("Provider=OraOLEDB.Oracle; Data Source=212.152.179.117/ora11g;User Id = d5b30;Password =d5b30; OLEDB.NET=True;");
+            //db = new Database("Provider=OraOLEDB.Oracle; Data Source=192.168.128.151/ora11g;User Id = d5b30;Password =d5b30; OLEDB.NET=True;");
+            db = new Database("Provider=OraOLEDB.Oracle; Data Source=212.152.179.117/ora11g;User Id = d5b30;Password =d5b30; OLEDB.NET=True;");
             db.connect();
             Console.WriteLine("Connected");
             db.setStadt(txtBoxStadt.Text);
@@ -47,7 +47,16 @@ namespace BSD_Gemeindeverwaltung
                     rec.Fill = new SolidColorBrush(Colors.Blue);
                     rec.MouseLeftButtonDown +=rec_MouseLeftButtonDown;
                     //rec.AddHandler(Rectangle.MouseLeftButtonDownEvent, new RoutedEventHandler(rec_click));
-                    rec.ToolTip = db.Haushalte.ElementAt(i).name + " " + db.Haushalte.ElementAt(i).number + " , " + db.Haushalte.ElementAt(i).plz + " " + txtBoxStadt.Text;
+                    String hhv_name = " ";
+                    Console.WriteLine(db.Mitglieder.Count);
+                    for (int k = 0; k < db.Mitglieder.Count; k++)
+                    {
+                        if (db.Mitglieder.ElementAt(k).h_id == db.Haushalte.ElementAt(i).hid)
+                        {
+                            hhv_name = db.Mitglieder.ElementAt(k).name;
+                        }
+                    }
+                    rec.ToolTip = "Adresse: " + db.Haushalte.ElementAt(i).name + " " + db.Haushalte.ElementAt(i).number + " , " + db.Haushalte.ElementAt(i).plz + " " + txtBoxStadt.Text + "\nHaushaltsvorstand: " + hhv_name;
                     Canvas.SetLeft(rec,db.Haushalte.ElementAt(i).wasserzaehler.ElementAt(j).standort.X);
                     Canvas.SetTop(rec, db.Haushalte.ElementAt(i).wasserzaehler.ElementAt(j).standort.Y);
                     can.Children.Add(rec);
