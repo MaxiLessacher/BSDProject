@@ -34,3 +34,7 @@ Nächste Ziele (bis 29.10):
   -> Bugs beim Select gefixt
   -> Tabellen gefixt
   -> An den JavaFX GUIs weitergearbeitet
+  
+03.12
+  -> Jäger: Hat weiter an dem Java Programm gearbeitet. Die Datenbankverbindung kann nun aufgebaut werden und Daten können aus der DB geladen werden.
+  -> Lessacher: Erstellung des Webservice, Verbindung zur Datenbank und laden der Daten, Haushalte können über den Webservice angezeigt werden.
