@@ -56,8 +56,8 @@ namespace BSD_Gemeindeverwaltung
 
         private void fillHaushalte()
         {
-            var reader = new OleDbCommand("Select * from haushalt h where plz = (select plz from ort where name = '" + Stadt + "')", this.connection).ExecuteReader();
-
+            //var reader = new OleDbCommand("Select * from haushalt h where plz = (select plz from ort where name = '" + Stadt + "')", this.connection).ExecuteReader();
+            var reader = new OleDbCommand("Select h.hh_id, h.name, h.plz, h.nummer, h.tuernr, h.wohnflaeche, h.landwirtschaft, h.garten, o.name from haushalt h inner join adresse ad on h.plz = ad.plz join strasse st on st.plz = ad.plz join ort o on o.plz = st.plz", this.connection).ExecuteReader();
             while (reader.Read())
             {
                 int id = Convert.ToInt32(reader["hh_id"].ToString());
@@ -68,7 +68,8 @@ namespace BSD_Gemeindeverwaltung
                 int wohnflaeche = Convert.ToInt32(reader["wohnflaeche"].ToString());
                 int landwirtschaft = Convert.ToInt32(reader["landwirtschaft"].ToString());
                 int garten = Convert.ToInt32(reader["garten"].ToString());
-
+                String ort = reader[8].ToString();
+                Console.WriteLine(name + " " + ort);
                 Boolean landWirtschaftBool = false;
                 Boolean gartenBool = false;
                 if (landwirtschaft == 1)
@@ -79,7 +80,7 @@ namespace BSD_Gemeindeverwaltung
                 {
                     gartenBool = true;
                 }
-                Haushalte.Add(new Haushalt(id, name, plz, number, tuernr, wohnflaeche, landWirtschaftBool, gartenBool));
+                Haushalte.Add(new Haushalt(id, name, plz, number, tuernr, wohnflaeche, landWirtschaftBool, gartenBool, ort));
             }
             connection.Close();
         }
@@ -88,9 +89,7 @@ namespace BSD_Gemeindeverwaltung
             for (int i = 0; i < Haushalte.Count; i++)
             {
                 connect();
-                //var reader = new OleDbCommand("Select zaehler_nr, w.hh_id, zaehlerstand, hauptzaehler from haushalt h inner join wasserzaehler w on h.hh_id = w.HH_ID where h.HH_ID = '" + (i+1) + "' and h.plz = '" + Haushalte.ElementAt(i).plz + "'", this.connection).ExecuteReader();
-                var reader = new OleDbCommand("Select zaehler_nr, w.hh_id, zaehlerstand, hauptzaehler from haushalt h inner join wasserzaehler w on h.hh_id = w.HH_ID where h.hh_id = '" + Haushalte.ElementAt(i).hid + "'", this.connection).ExecuteReader();
-                //var reader = new OleDbCommand("Select zaehler_nr, w.hh_id, zaehlerstand, hauptzaehler, w.zaehler_nr, t.x, t.y from haushalt h inner join wasserzaehler w on h.hh_id = w.HH_ID where h.hh_id = '" + Haushalte.ElementAt(i).hid + "' , TABLE(SDO_UTIL.GETVERTICES(w.standort)) t", this.connection).ExecuteReader();
+                var reader = new OleDbCommand("Select w.zaehler_nr, w.hauptzaehler, w.zaehlerstand, h.hh_id, t.x, t.y from wasserzaehler w inner join haushalt h on h.hh_id = w.hh_id and h.hh_id = '" + Haushalte.ElementAt(i).hid +"' , TABLE(SDO_UTIL.GETVERTICES(w.standort)) t", this.connection).ExecuteReader();
                 while(reader.Read())
                 {
                     Console.WriteLine(Haushalte.Count);
@@ -98,23 +97,16 @@ namespace BSD_Gemeindeverwaltung
                     int hhid = Convert.ToInt32(reader["hh_id"].ToString());
                     int zaehlerstand = Convert.ToInt32(reader["zaehlerstand"].ToString());
                     Point p = new Point();
+                    p.X = Convert.ToInt32(reader["X"]);
+                    p.Y = Convert.ToInt32(reader["Y"]);
                     int isHauptzaehler = Convert.ToInt32(reader["Hauptzaehler"].ToString());
                     Boolean hauptZaehlerBool = false;
                     if(isHauptzaehler == 1)
                     {
                         hauptZaehlerBool = true;
                     }
-                    //var reader2 = new OleDbCommand("select w.zaehler_nr, t.x, t.y FROM wasserzaehler w inner join haushalt h on h.HH_ID = w.HH_ID AND h.hh_id = '" + (i+1) + "' , TABLE(SDO_UTIL.GETVERTICES(w.standort)) t", this.connection).ExecuteReader();
-                    //var reader2 = new OleDbCommand("Select w.zaehler_nr, t.x, t.y FROM wasserzaehler w where w.zaehler_nr = '" + zaehler_nr + "' , TABLE(SDO_UTIL.GETVERTICES(w.standort)) t", this.connection).ExecuteReader();
-                    var reader2 = new OleDbCommand("select w.zaehler_nr, t.x, t.y FROM wasserzaehler w inner join haushalt h on h.HH_ID = w.HH_ID AND h.hh_id = '" + Haushalte.ElementAt(i).hid + "' , TABLE(SDO_UTIL.GETVERTICES(w.standort)) t", this.connection).ExecuteReader();
-                    while(reader2.Read())
-                    {
-                        p.X = Convert.ToInt32(reader2["X"]);
-                        p.Y = Convert.ToInt32(reader2["Y"]);
-                    }
                     Haushalte.ElementAt(i).addWasserzaehler(zaehler_nr, hhid, zaehlerstand, p, hauptZaehlerBool);
                     Console.WriteLine("X: " + p.X + ", Y:" + p.Y);
-                    System.Drawing.Point p2 = new System.Drawing.Point(p.X, p.Y);
                 }
             }
         }

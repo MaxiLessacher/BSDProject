@@ -74,3 +74,60 @@ Fatal NI connect error 12541, connecting to:
     TNS-00511: Kein Listener
     nt secondary err code: 61
     nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.1.0.2.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.1.0.2.0 - Production
+  Time: 10-DEZ-2015 10:06:49
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: Timeout für Vorgang
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Timeout für Vorgang
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SERVICE_NAME=ora11g)(CID=(PROGRAM=C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.vshost.exe)(HOST=VIRTPC)(USER=schueler)))(ADDRESS=(PROTOCOL=TCP)(HOST=212.152.179.117)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.1.0.2.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.1.0.2.0 - Production
+  Time: 10-DEZ-2015 10:30:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12541
+    TNS-12541: TNS: Kein Listener
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: Kein Listener
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.1.0.2.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.1.0.2.0 - Production
+  Time: 10-DEZ-2015 11:18:17
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS: Timeout für Vorgang
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Timeout für Vorgang
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>

@@ -17,9 +17,10 @@ namespace BSD_Gemeindeverwaltung
         int wohnflaeche { get; set; }
         Boolean landwirtschaft { get; set; }
         Boolean garten { get; set; }
+        public String ort { get; set; }
         public List<Wasserzaehler> wasserzaehler = new List<Wasserzaehler>();
 
-        public Haushalt(int pHid, String pName, int pPlz, int pNumber, int pTuernr, int pWohnflaeche, Boolean pLandwirtschaft, Boolean pGarten)
+        public Haushalt(int pHid, String pName, int pPlz, int pNumber, int pTuernr, int pWohnflaeche, Boolean pLandwirtschaft, Boolean pGarten, String port)
         {
             this.hid = pHid;
             this.name = pName;
@@ -29,6 +30,7 @@ namespace BSD_Gemeindeverwaltung
             this.wohnflaeche = pWohnflaeche;
             this.landwirtschaft = pLandwirtschaft;
             this.garten = pGarten;
+            this.ort = port;
         }
 
         public void addWasserzaehler(int pZaehler_nr, int pHhid, int pZaehlerstand, Point pStandort, Boolean pIsHauptzaehler)
