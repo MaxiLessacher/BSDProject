@@ -1,6 +1,11 @@
-package application;
+package pkgService;
 
-public class Haushalt implements Comparable<Haushalt> {
+import java.io.Serializable;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Haushalt implements Serializable{
 	private int HH_ID;
 	private String strasse;
 	private int plz;
@@ -89,15 +94,6 @@ public class Haushalt implements Comparable<Haushalt> {
 
 	public void setGarten(boolean isGarten) {
 		this.isGarten = isGarten;
-	}
-
-	@Override
-	public int compareTo(Haushalt o) {
-		int retValue = 1;
-		if (HH_ID == o.getHH_ID()) {
-			retValue = 0;
-		}
-		return retValue;
 	}
 
 }

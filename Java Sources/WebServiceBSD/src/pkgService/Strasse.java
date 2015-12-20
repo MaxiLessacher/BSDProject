@@ -1,6 +1,6 @@
-package application;
+package pkgService;
 
-public class Strasse implements Comparable<Strasse>{
+public class Strasse {
 	private String strasse;
 	private int plz;
 
@@ -28,15 +28,6 @@ public class Strasse implements Comparable<Strasse>{
 
 	public void setPlz(int plz) {
 		this.plz = plz;
-	}
-
-	@Override
-	public int compareTo(Strasse o) {
-		int retValue = 1;
-		if (plz == o.getPlz()) {
-			retValue = strasse.compareTo(o.getStrasse());
-		}
-		return retValue;
 	}
 
 }

@@ -1,6 +1,6 @@
-package application;
+package pkgService;
 
-public class Verwaltungspersonal implements Comparable<Verwaltungspersonal> {
+public class Verwaltungspersonal {
 	private int personal_id;
 	private String name;
 	private String abteilung;
@@ -37,15 +37,6 @@ public class Verwaltungspersonal implements Comparable<Verwaltungspersonal> {
 
 	public void setAbteilung(String abteilung) {
 		this.abteilung = abteilung;
-	}
-
-	@Override
-	public int compareTo(Verwaltungspersonal o) {
-		int retValue = 1;
-		if (personal_id == o.getPersonal_id()) {
-			retValue = 0;
-		}
-		return retValue;
 	}
 
 

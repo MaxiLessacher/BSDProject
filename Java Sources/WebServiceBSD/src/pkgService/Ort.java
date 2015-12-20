@@ -1,6 +1,6 @@
-package application;
+package pkgService;
 
-public class Ort implements Comparable<Ort>{
+public class Ort {
 	private int plz;
 	private String ort;
 
@@ -27,15 +27,6 @@ public class Ort implements Comparable<Ort>{
 
 	public void setOrt(String ort) {
 		this.ort = ort;
-	}
-
-	@Override
-	public int compareTo(Ort o) {
-		int retValue = 1;
-		if (plz == o.getPlz()) {
-			retValue = ort.compareTo(o.getOrt());
-		}
-		return retValue;
 	}
 
 

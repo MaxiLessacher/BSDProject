@@ -1,9 +1,10 @@
-package application;
+package pkgService;
 
-import java.time.LocalDate;
+import java.util.Date;
 
-public class Wasserstandsmeldung implements Comparable<Wasserstandsmeldung>{
-	private LocalDate date;
+
+public class Wasserstandsmeldung {
+	private Date date;
 	private int zaehler_nr;
 	private int neuZaehlerstand;
 
@@ -11,17 +12,17 @@ public class Wasserstandsmeldung implements Comparable<Wasserstandsmeldung>{
 
 	}
 
-	public Wasserstandsmeldung(LocalDate _date, int zaehler_nr, int neuZaehlerstand) {
+	public Wasserstandsmeldung(Date _date, int zaehler_nr, int neuZaehlerstand) {
 		this.date = _date;
 		this.zaehler_nr = zaehler_nr;
 		this.neuZaehlerstand = neuZaehlerstand;
 	}
 
-	public LocalDate getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(LocalDate date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 
@@ -39,15 +40,6 @@ public class Wasserstandsmeldung implements Comparable<Wasserstandsmeldung>{
 
 	public void setNeuZaehlerstand(int neuZaehlerstand) {
 		this.neuZaehlerstand = neuZaehlerstand;
-	}
-
-	@Override
-	public int compareTo(Wasserstandsmeldung o) {
-		int retValue = 1;
-		if (zaehler_nr == o.getZaehler_nr()) {
-			retValue = date.compareTo(o.getDate());
-		}
-		return retValue;
 	}
 
 }

@@ -1,6 +1,6 @@
-package application;
+package pkgService;
 
-public class Mitglied implements Comparable<Mitglied>{
+public class Mitglied {
 	private int mitglieds_id;
 	private String name;
 	private boolean isHH_Vorstand;
@@ -48,17 +48,5 @@ public class Mitglied implements Comparable<Mitglied>{
 	public void setHH_ID(int hH_ID) {
 		HH_ID = hH_ID;
 	}
-
-	@Override
-	public int compareTo(Mitglied o) {
-		int retValue = 1;
-		if (HH_ID == o.getHH_ID()) {
-			if (mitglieds_id == o.getMitglieds_id()) {
-				retValue = 0;
-			}
-		}
-		return retValue;
-	}
-
 
 }

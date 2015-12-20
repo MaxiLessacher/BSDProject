@@ -1,6 +1,6 @@
-package application;
+package pkgService;
 
-public class Adresse implements Comparable<Adresse> {
+public class Adresse {
 	private int plz;
 	private String strasse;
 	private int hausnummer;
@@ -40,16 +40,5 @@ public class Adresse implements Comparable<Adresse> {
 		this.hausnummer = hausnummer;
 	}
 
-	@Override
-	public int compareTo(Adresse a) {
-		int retValue = 1;
-		if (plz == a.getPlz()) {
-			if (strasse.equals(a.getStrasse())) {
-				if (hausnummer==a.getHausnummer()) {
-					retValue = 0;
-				}
-			}
-		}
-		return retValue;
-	}
+
 }

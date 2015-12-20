@@ -1,6 +1,6 @@
-package application;
+package pkgService;
 
-public class Wasserzaehler implements Comparable<Wasserzaehler>{
+public class Wasserzaehler {
 	private int zaehler_nr;
 	private int HH_ID;
 	private int zaehlerstand;
@@ -67,15 +67,6 @@ public class Wasserzaehler implements Comparable<Wasserzaehler>{
 
 	public void setStandort_y(int standort_y) {
 		this.standort_y = standort_y;
-	}
-
-	@Override
-	public int compareTo(Wasserzaehler o) {
-		int retValue = 1;
-		if (zaehler_nr == o.getZaehler_nr()) {
-			retValue = 0;
-		}
-		return retValue;
 	}
 
 }
