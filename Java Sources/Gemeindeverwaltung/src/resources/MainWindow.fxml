@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneHaupt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.Controller">
+   <children>
+      <VBox fx:id="vboxButtons" layoutX="32.0" layoutY="24.0" prefHeight="349.0" prefWidth="170.0">
+         <children>
+            <Button fx:id="btnVerwaltungspersonal" mnemonicParsing="false" onAction="#onAction_btnVerwaltungspersonal" prefHeight="26.0" prefWidth="170.0" text="Verwaltungspersonal" />
+            <Button fx:id="btnOrt" mnemonicParsing="false" onAction="#onAction_btnOrt" prefHeight="26.0" prefWidth="170.0" text="Ort" />
+            <Button fx:id="btnStrasse" mnemonicParsing="false" onAction="#onAction_btnStrasse" prefHeight="26.0" prefWidth="170.0" text="Straße" />
+            <Button fx:id="btnAdresse" mnemonicParsing="false" onAction="#onAction_btnAdresse" prefHeight="26.0" prefWidth="170.0" text="Adresse" />
+            <Button fx:id="btnHaushalt" mnemonicParsing="false" onAction="#onAction_btnHaushalt" prefHeight="26.0" prefWidth="170.0" text="Haushalt" />
+            <Button fx:id="btnMitglieder" mnemonicParsing="false" onAction="#onAction_btnMitglieder" prefHeight="26.0" prefWidth="170.0" text="Mitglieder" />
+            <Button fx:id="btnWasserzaehler" mnemonicParsing="false" onAction="#onAction_btnWasserzaehler" prefHeight="26.0" prefWidth="170.0" text="Wasserzähler" />
+            <Button fx:id="btnWasserstandsmeldung" mnemonicParsing="false" onAction="#onAction_btnWasserstandsmeldung" prefHeight="26.0" prefWidth="170.0" text="Wasserstandsmeldung" />
+         </children>
+               
+      </VBox>
+      <HBox layoutX="238.0" layoutY="24.0" prefHeight="30.0" prefWidth="340.0">
+         <children>
+            <RadioButton fx:id="rbtnIntern" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" selected="false" text="interne IP">
+               <toggleGroup>
+                  <ToggleGroup fx:id="rbtype" />
+               </toggleGroup>
+                     </RadioButton>
+                     <RadioButton fx:id="rbtnExtern" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" text="externe IP" selected="true" toggleGroup="$rbtype" />
+         </children>
+      </HBox>
+   </children>
+</Pane>
