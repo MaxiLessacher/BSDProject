@@ -1,5 +1,8 @@
 Iteration 3:
-  -> Jäger David: JavaFx: Code aufbessern, verschönern; Java WebService erstellen;
-  -> Lessacher: Anzeigen von Landkarte statt Punkten in C#; verschönern des Programms, code aufbessern
-  -> Pederiva: Erstellen von SQL-Sequenzen für Tabellen mit fortlaufender Nummer; neue Inserts für echte Daten
+  -> Jäger David: JavaFx: Code aufbessern, verschönern; Java WebService erstellen; Erstellung von Android App,
+  Datenbank-Funktionen über WebService aufrufen
+  -> Lessacher: Anzeigen von Landkarte statt Punkten in C#; verschönern des Programms, code aufbessern; Maps Activity für App,
+  Benutzer gibt Adresse ein, Karte zeigt Standpunkt an
+  -> Pederiva: Erstellen von SQL-Sequenzen für Tabellen mit fortlaufender Nummer; neue Inserts für echte Daten; erstellen von
+  Trigger 
   
