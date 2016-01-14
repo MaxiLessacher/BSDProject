@@ -489,7 +489,7 @@ public class Database {
 		createConnection();
 		try {
 			PreparedStatement stmt = null;
-			stmt = conn.prepareStatement("update verwaltungspersonal set personalid=?, name = ?, abteilung=? where personal_id = ?", ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
+			stmt = conn.prepareStatement("update verwaltungspersonal set personalid=?, name = ?, abteilung=? where personalid = ?", ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
 			stmt.setInt(1, newVw.getPersonal_id());
 			stmt.setString(2, newVw.getName());
 			stmt.setString(3, newVw.getAbteilung());
