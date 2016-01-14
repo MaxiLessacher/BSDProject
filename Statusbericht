@@ -43,3 +43,8 @@ Nächste Ziele (bis 29.10):
   -> Jäger: JavaFx: Alle Tabellen werden geladen, bei mehreren Tabellen besteht die Möglichkeit Einträge hinzuzufügen.
   -> Lessacher: startete mit dem WebService
   -> Pederiva: C#: SQL-Abfrage bearbeitet zur Erhöhung der Geschwindigkeit
+
+14.01
+  -> Jäger: WebService: Erstellung des Webservice; Überarbeitung der Database; Beginn App zu entwickeln
+  -> Lessacher: Erstellung von Google Maps Activity; Eingabe von Adresse, wodurch der Standpunkt auf der Karte angezeigt wird
+  -> Pederiva: Trigger für verschiedene Tabellen erstellt; Überarbeitung der Tabelle Mitglieder
