@@ -38,3 +38,13 @@ Nächste Ziele (bis 29.10):
 03.12
   -> Jäger: Hat weiter an dem Java Programm gearbeitet. Die Datenbankverbindung kann nun aufgebaut werden und Daten können aus der DB geladen werden.
   -> Lessacher: Erstellung des Webservice, Verbindung zur Datenbank und laden der Daten, Haushalte können über den Webservice angezeigt werden.
+
+18.12
+  -> Jäger: JavaFx: Alle Tabellen werden geladen, bei mehreren Tabellen besteht die Möglichkeit Einträge hinzuzufügen.
+  -> Lessacher: startete mit dem WebService
+  -> Pederiva: C#: SQL-Abfrage bearbeitet zur Erhöhung der Geschwindigkeit
+
+14.01
+  -> Jäger: WebService: Erstellung des Webservice; Überarbeitung der Database; Beginn App zu entwickeln
+  -> Lessacher: Erstellung von Google Maps Activity; Eingabe von Adresse, wodurch der Standpunkt auf der Karte angezeigt wird
+  -> Pederiva: Trigger für verschiedene Tabellen erstellt; Überarbeitung der Tabelle Mitglieder
