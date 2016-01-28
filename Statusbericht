@@ -48,3 +48,16 @@ Nächste Ziele (bis 29.10):
   -> Jäger: WebService: Erstellung des Webservice; Überarbeitung der Database; Beginn App zu entwickeln
   -> Lessacher: Erstellung von Google Maps Activity; Eingabe von Adresse, wodurch der Standpunkt auf der Karte angezeigt wird
   -> Pederiva: Trigger für verschiedene Tabellen erstellt; Überarbeitung der Tabelle Mitglieder
+
+28.01 - Semesterstand
+  -> Jäger D.: JavaFX GUI + Funktionen: voll funktionsfähig
+               Java Webservice: voll funktionsfähig
+               Android App: Grundsätzlicher Aufbau der Tabellenbearbeitungsapp; Verbindung zu Webservice möglich
+                            Tatü: Auswählen von Bild aus Galerie und Anzeigen in App
+  ->Lessacher: C# - 90% des Programmes; nicht identifizierbare Exception
+               Java Webservice: Anfänge des Webservice
+               Android App: Google Maps Activity + Anzeigen gewisser Standorte mit Bildern + Verbindung der Wasserrohre
+  -> Pederiva: C# - Restliche 10%; allerdings Exception besteht noch immer bei Verbindung von Connection
+               SQL: Trigger für einige Tabellen (eindeutige IDs)
+               Inserts für Tables
+  ->Gemeinsam: SQL: Create Tables
