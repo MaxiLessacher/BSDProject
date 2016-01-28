@@ -1,0 +1,39 @@
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.exe.config
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.exe
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.pdb
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.csprojResolveAssemblyReference.cache
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\MainWindow.baml
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\MainWindow.g.cs
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\App.g.cs
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung_MarkupCompile.cache
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.g.resources
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.Properties.Resources.resources
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.csproj.GenerateResource.Cache
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.exe
+C:\Users\Maxi\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.pdb
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.exe.config
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.exe
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.pdb
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.exe
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.pdb
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.csprojResolveAssemblyReference.cache
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\MainWindow.baml
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\MainWindow.g.cs
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\App.g.cs
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung_MarkupCompile.cache
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.g.resources
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.Properties.Resources.resources
+C:\Users\schueler\Desktop\BSD_Gemeindeverwaltung\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.csproj.GenerateResource.Cache
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.exe.config
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.exe
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.pdb
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.exe
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\bin\Debug\BSD_Gemeindeverwaltung.pdb
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.csprojResolveAssemblyReference.cache
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\MainWindow.baml
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\MainWindow.g.cs
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\App.g.cs
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung_MarkupCompile.cache
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.g.resources
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.Properties.Resources.resources
+C:\Users\schueler\Documents\GitHub\BSDProject\C# Sources\BSD_Gemeindeverwaltung\obj\Debug\BSD_Gemeindeverwaltung.csproj.GenerateResource.Cache

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Gemeindeverwaltung</string>
+    <string name="btnOrt">Ort</string>
+    <string name="btnStrasse">Straße</string>
+    <string name="btnAdresse">Adresse</string>
+    <string name="btnHaushalt">Haushalt</string>
+    <string name="btnMitglied">Mitglieder</string>
+    <string name="btnWasserzaehler">Wasserzähler</string>
+    <string name="btnWasserstandsmeldung">Wasserstandsmeldung</string>
+    <string name="btnVerwaltungspersonal">Verwaltungspersonal</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="lblPLZ">Postleitzahl:</string>
+    <string name="lblOrt">Ort:</string>
+    <string name="lblStrasse">Strasse:</string>
+    <string name="lblHausnummer">Hausnummer:</string>
+    <string name="lblTuernummer">Türnummer:</string>
+    <string name="lblHH_ID">HaushaltsID:</string>
+    <string name="lblLandwirtschaft">Landwirtschaft:</string>
+    <string name="lblGarten">Garten:</string>
+    <string name="lblWohnflaeche">Wohnfläche:</string>
+    <string name="lblMitgliedsID">MitgliedsID:</string>
+    <string name="lblName">Name:</string>
+    <string name="lblHHVorstand">Vorstand:</string>
+    <string name="lblPersonalID">PersonalID:</string>
+    <string name="lblAbteilung">Abteilung:</string>
+    <string name="lblDatum">Datum:</string>
+    <string name="lblZaehlerNr">Zählernummer:</string>
+    <string name="lblneuZaehlerstand">neuZählerstand:</string>
+    <string name="lblZaehlerstand">Zählerstand:</string>
+    <string name="lblHauptzaehler">Hauptzähler:</string>
+    <string name="lblX">X-Koordinate:</string>
+    <string name="lblY">Y-Koordinate:</string>
+    <string name="title_activity_map">Landkarte</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_activity_test_map">MapTest</string>
+</resources>

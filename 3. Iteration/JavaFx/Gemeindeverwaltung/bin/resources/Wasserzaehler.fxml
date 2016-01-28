@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A4FEFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgController.WasserzaehlerController">
+   <children>
+      <VBox layoutX="31.0" layoutY="107.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #A4FEFF;">
+         <children>
+            <Button fx:id="btnLoad" mnemonicParsing="false" onAction="#onAction_btnLoad" prefHeight="26.0" prefWidth="100.0" text="Load" />
+            <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#onAction_btnCreate" prefHeight="26.0" prefWidth="100.0" text="Create" />
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onAction_btnDelete" prefHeight="26.0" prefWidth="100.0" text="Delete" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onAction_btnCancel" prefHeight="26.0" prefWidth="100.0" text="Cancel" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableviewData" editable="true" layoutX="165.0" layoutY="36.0" prefHeight="334.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="cellZaehlerNr" onEditCommit="#onEdit_cellZaehlerNr" prefWidth="70.0" text="ZaehlerNr" />
+          <TableColumn fx:id="cell_HH_ID" onEditCommit="#onEdit_cell_HH_ID" prefWidth="70.0" text="HH_ID" />
+	  <TableColumn fx:id="cellZaehlerstand" onEditCommit="#onEdit_cellZaehlerstand" prefWidth="70.0" text="Zaehlerstand" />
+	  <TableColumn fx:id="cellStandort_X" onEditCommit="#onEdit_cellStandort_X" prefWidth="70.0" text="Standort" />
+	  <TableColumn fx:id="cellStandort_Y" onEditCommit="#onEdit_cellStandort_Y" prefWidth="70.0" text="Standort" />
+	  <TableColumn fx:id="cellHauptzaehler" onEditCommit="#onEdit_cellHauptzaehler" prefWidth="70.0" text="Hauptzaehler" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

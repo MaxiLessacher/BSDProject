@@ -1,0 +1,14 @@
+<Context reloadable="true" antiResourceLocking="true">
+<Resource name="jdbc/resService"
+auth="Container"
+type="javax.sql.DataSource"
+driverClassName="oracle.jdbc.OracleDriver"
+url="jdbc:oracle:thin:@192.168.128.151:1521:ora11g"
+username="d5b30"
+password="d5b30"
+factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+maxActive="20"
+maxIdle="30"
+maxWait="-1"
+/>
+</Context>

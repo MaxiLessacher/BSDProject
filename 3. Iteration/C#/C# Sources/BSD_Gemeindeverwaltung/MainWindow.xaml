@@ -1,0 +1,13 @@
+﻿<Window x:Class="BSD_Gemeindeverwaltung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="703.118" Width="1113.976">
+    <Grid Margin="0,0,0,0">
+        <TextBox x:Name="txtBoxStadt" HorizontalAlignment="Left" Height="26" Margin="121,36,0,0" TextWrapping="Wrap" Text="Koestenberg" VerticalAlignment="Top" Width="208" RenderTransformOrigin="0.974,0.697"/>
+        <Label x:Name="lblStadt" Content="Stadtname:" HorizontalAlignment="Left" Margin="29,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.228,-0.199" Height="27" Width="72"/>
+        <Button x:Name="bttnSearch" Content="Search" HorizontalAlignment="Left" Margin="348,36,0,0" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.45,-0.904" Height="27" Click="bttnSearch_Click"/>
+        <ScrollViewer x:Name="scrollPanel" Margin="9,117,24,21"/>
+        <TextBox x:Name="txtBoxAdresse" Height="76" Margin="430,36,24,0" TextWrapping="Wrap" Text="Wasserzaehler Information" VerticalAlignment="Top" IsEnabled="False"/>
+
+    </Grid>
+</Window>
