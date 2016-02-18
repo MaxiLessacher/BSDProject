@@ -1,10 +1,8 @@
-Tasks:
+Last Sprint: (Iteration 4)
 
--Bing Map in C# - Pederiva
--Markermanipulationen (Foto des HH Vorstand als Marker, Markernetz verbinden, Mit klick auf Marker SCHÖNE Ansicht der Informationen) - Pederiva
--Verbindung mit anderen Nutzern - Pederiva
--Wasserkostenrechnung für Haushalte in C# (Die Leute die im Haushalt wohnen wollen einen guten Überblick über ihren Wasserverbrauch haben und natürlich auch die entstandenen Kosten sehen) - Pederiva
--Überarbeitung - Jäger (Lessacher)
--Übersicht für Gemeinde in C# Die Gesamte Gemeinde soll einen Überblick über alle Haushalte, deren Wasserverbrauch und die entstanden Wasserkosten haben) - Pederiva
--Android Map Design und Funktionalität überarbeiten - Lessacher
--Android App überarbeitung der Listen - Jäger
+-Pederiva:  Bing Map in C#
+            Markermanipulationen (Foto des HH Vorstand als Marker, Markernetz verbinden, Mit klick auf Marker SCHÖNE Ansicht der Informationen)
+-Lessacher: Android Map Design und Funktionalität überarbeiten
+-Jäger:     Android App Überarbeitung der Listen
+            Überarbeitung JavaFx und Android
+            JavaFx: Wasserkostenrechnung: Benutzer macht Wasserstandsmeldung, daraufhin wird eine Rechnung für den Zeitraum zwischen der jetzigen und der letzten Wasserstandsmeldung erstellt
