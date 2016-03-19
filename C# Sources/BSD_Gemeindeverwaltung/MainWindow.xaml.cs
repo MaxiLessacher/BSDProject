@@ -25,7 +25,7 @@ namespace BSD_Gemeindeverwaltung
         {
             InitializeComponent();
             //db = new Database("Provider=OraOLEDB.Oracle; Data Source=192.168.128.151/ora11g;User Id=d5b30;Password =d5b30; OLEDB.NET=True;");
-            db = new Database("Provider=OraOLEDB.Oracle; Data Source=212.152.179.117/ora11g;User Id=d5b30;Password =d5b30; OLEDB.NET=True;");
+            db = new Database("Provider=OraOLEDB.Oracle; Data Source=212.152.179.117/ora11g; User Id=d5b30; Password=d5b30;OLEDB.NET=True;");
             db.connect();
             Console.WriteLine("Connected");
             db.setStadt(txtBoxStadt.Text);
