@@ -44,8 +44,24 @@ Create Table Mitglieder (
 	Name varchar2(30),
 	HH_Vorstand number(1),
 	HH_ID references Haushalt(HH_ID),
+	Fotoname varchar2(40),
 	Primary Key (Mitglieds_ID, HH_ID)	
 );
+
+create or replace
+trigger tr_mitglied
+before insert on Mitglieder
+for each row
+
+declare
+  
+begin
+  select NVL(max(MITGLIEDS_ID),0)+1 into :new.MITGLIEDS_ID from Mitglieder where NVL(hh_id, :new.hh_id) = :new.hh_id;
+  
+  exception
+  when no_data_found then
+  :new.MITGLIEDS_ID := 1;
+end;
 
 Create Table Wasserzaehler (
 	Zaehler_Nr number Primary Key,
